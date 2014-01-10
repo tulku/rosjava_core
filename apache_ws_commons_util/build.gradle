@@ -14,18 +14,8 @@
  * the License.
  */
 
-include(
-    'apache_xmlrpc_client',
-    'apache_xmlrpc_common',
-    'apache_xmlrpc_server',
-    'apache_ws_commons_util',
-    'rosjava',
-    'rosjava_geometry',
-    'rosjava_benchmarks',
-    'rosjava_test',
-    'rosjava_tutorial_pubsub',
-    'rosjava_tutorial_right_hand_rule',
-    'rosjava_tutorial_services',
-    'docs',
-    )
+dependencies {
+  // compile 'org.apache.commons:com.springsource.org.apache.commons.httpclient:3.1.0'
+  // compile 'org.apache.ws.commons:ws-commons-util:1.0.1'
+}
 
