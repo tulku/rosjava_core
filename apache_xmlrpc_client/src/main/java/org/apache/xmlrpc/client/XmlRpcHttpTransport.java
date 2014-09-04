@@ -14,7 +14,7 @@
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
- * under the License.    
+ * under the License.
  */
 package org.apache.xmlrpc.client;
 
@@ -62,7 +62,8 @@ public abstract class XmlRpcHttpTransport extends XmlRpcStreamTransport {
 
     /** The user agent string.
      */
-    public static final String USER_AGENT;
+    public static final String USER_AGENT = "Apache XML RPC 3.1.3";
+    /*
     static {
         final String p = "XmlRpcClient.properties";
         final URL url = XmlRpcHttpTransport.class.getResource(p);
@@ -83,9 +84,10 @@ public abstract class XmlRpcHttpTransport extends XmlRpcStreamTransport {
         } catch (IOException e) {
             throw new UndeclaredThrowableException(e, "Failed to load resource " + url + ": " + e.getMessage());
         } finally {
-            if (stream != null) { try { stream.close(); } catch (Throwable t) { /* Ignore me */ } }
+            if (stream != null) { try { stream.close(); } catch (Throwable t) {  } }
         }
     }
+    */
 
     private String userAgent;
 
